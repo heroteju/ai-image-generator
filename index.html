@@ -27,3 +27,44 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS file link -->
+</head>
+<body>
+    <header>
+        <h1>AI Image Generator</h1>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Enter Your Text Prompt</h2>
+            <textarea id="prompt-input" placeholder="Example: A futuristic city with flying cars"></textarea>
+            <button id="generate-btn">Generate Image</button>
+        </section>
+        <section id="output-section">
+            <h2>Generated Image</h2>
+            <div id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Generating image...</p>
+            </div>
+            <img id="generated-image" src="" alt="Generated Image">
+            <button id="download-btn" style="display: none;">Download Image</button>
+            <div id="social-share" style="display: none;">
+                <button onclick="shareOnTwitter()">Share on Twitter</button>
+                <button onclick="shareOnFacebook()">Share on Facebook</button>
+            </div>
+            <div id="error-message" style="display: none; color: red;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 AI Image Generator. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- JavaScript file link -->
+</body>
+</html>
